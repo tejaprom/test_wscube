@@ -1,0 +1,83 @@
+.home {
+    &__cer {
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(to bottom, #f1eceb, #f1eceb);
+        // background: #fff;
+        padding: 5vw 0;
+
+        &__container {
+            width: 80%;
+        }
+
+        &__haading {
+            text-align: center;
+
+            h3 {
+                font-size: 2vw;
+                font-family: "Dancing Script", cursive;
+                font-weight: 400;
+                color: black;
+                margin: 0;
+            }
+
+            h2 {
+                font-family: "Montserrat", sans-serif;
+                font-size: 2.2vw;
+                color: #f0623a;
+                font-weight: 700;
+                margin: 0;
+                padding: 1vw 0;
+            }
+        }
+
+        &__cards {
+            display: flex;
+            justify-content: space-between;
+            padding: 2vw 0;
+        }
+
+        &__card {
+            width: 24%;
+            background: #cdc4be;
+            border-radius: 0.35vw;
+
+            &__image {
+                padding: 0.2vw;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+//Mobile mode
+@media only screen and (min-width: 280px) and (max-width: 767px) {
+    .home {
+        &__cer {
+            padding: 10vw 0;
+
+            &__haading {
+                h3 {
+                    font-size: 7vw;
+                }
+
+                h2 {
+                    font-size: 5vw;
+                }
+            }
+
+            &__cards {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            &__card {
+                width: 100%;
+                margin: 3vw 0;
+            }
+        }
+    }
+}

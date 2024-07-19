@@ -1,0 +1,49 @@
+.button {
+  margin: 1rem 0 0 0;
+  width: 50%;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  // font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 24px;
+  box-shadow: 6px 6px 9px 0 white, -1px -1px 4px 0 white;
+  border: solid 1px #0c5b9f;
+  background: #0c5b9f;
+
+  &__disabled {
+    box-shadow: 6px 6px 9px 0 #42597a, -1px -1px 4px 0 #42597a;
+    background: #42597a;
+    border: 1px solid #42597a;
+    cursor: not-allowed;
+    // opacity: 0.5;
+    color: white;
+  }
+}
+
+.button:active {
+  box-shadow: inset -6px -6px 6px 0 #0c5b9f, inset 6px 6px 8px 0 #0c5b9f,
+    inset 6px 6px 8px 0 #0c5b9f, inset -6px -6px 6px 0 #0c5b9f !important;
+  border-style: solid;
+  border-width: 1px;
+  border-image-slice: 1;
+  background: #0c5b9f !important;
+  background-origin: border-box;
+}
+
+@media screen and (min-width: 280px) and (max-width: 768px) {
+  .button{
+    font-size:12px;
+    width: 41%;
+    padding: 7px 7px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1020px) {
+  .button{
+    font-size: 15px;
+    width: 38%;
+    padding: 10px 10px;
+  }
+}

@@ -1,0 +1,107 @@
+.slick-initialized .slick-slide{
+  // width: 602px !important;
+}
+.slider-content{
+width: 80%;
+}
+.gap{
+  width: 90% !important;
+&_back{
+        width: 83% !important;
+        padding: 0.6vw 2vw;
+      //  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+       background-color: white;
+       border-radius: 1vw;
+&_content{
+        background-image: url('../../../assets/images/home/Group\ \(3\).png'),url("../../../assets/images/home/Group\ \(4\).png");
+        background-repeat: no-repeat , no-repeat;
+        background-position: left top, right bottom;
+        background-size: 16.5% 8vh, 16.5% 8vh;
+        width: 100%;
+        &_container{
+                padding: 2vw 0vw;
+                width: 96%;
+                h3{
+                        text-align: justify;
+                        margin-left: .2vw;
+                        text-align: left;
+
+        font-family: "Montserrat", sans-serif;
+       
+        font-size: 1vw;
+        color: #868686;
+        line-height: 2vw;
+                }
+
+        }
+}
+}}
+
+
+.next{
+  
+ 
+    color: #f0623a;
+    border-radius: 50%;
+    border: 1px solid #f0623a;
+    font-size: 2.5vw;
+    // padding:0 .3vw .3vw .3vw;
+    &:hover{
+      color: white;
+      background-color: #f0623a;
+    }
+
+  }
+  .arrows{
+  
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 93%;
+    margin-top: 2vw;
+    &_container{
+      display: flex;
+      justify-content: space-between;
+      width: 14%;
+
+    }
+
+  }
+
+
+ @media only screen and (min-width: 280px) and (max-width: 767px) {
+  .slider-content{
+
+  }
+  .gap{
+    width: 107% !important;
+   &_back{
+    padding: 3.6vw 3vw;;
+    &_content{
+      background-size: 16.5% 4vh, 16.5% 4vh;
+      &_container{
+        padding: 4vw 0;
+        width: 96%;
+        h3{
+          line-height: 6vw;
+          font-size: 4vw;
+        }
+      }
+    }
+   }
+
+  }
+  .next{
+    font-size: 8.5vw;
+  }
+  .arrows{
+    margin-top: 5vw;
+    width: 100%;
+    &_container{
+      width: 39%;
+
+    }
+   
+ }
+ }

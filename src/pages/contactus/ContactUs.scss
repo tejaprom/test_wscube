@@ -1,0 +1,446 @@
+.contact {
+  &__conatiner {
+    font-family: "Montserrat", sans-serif;
+  }
+  &__banner {
+    height: 75vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__heading {
+      position: absolute;
+      top: 18vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: "Montserrat", sans-serif;
+      h2 {
+        font-size: 2.2vw;
+        text-align: center;
+        letter-spacing: 1px;
+        font-weight: 600;
+        margin: 0;
+      }
+    }
+  }
+  &__sections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // background: #f1eceb;
+    background: #fff;
+    padding: 14vw 0 0vw 0;
+    margin-top: -10vw;
+  }
+  &__section {
+    width: 70%;
+    &__top {
+      padding: 2vw 0;
+      display: flex;
+      justify-content: space-between;
+      &__card {
+        width: 30%;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2vw 0;
+        box-shadow: 0px 0px 6px 3px #e3dcdc;
+        // border: 1px solid #707070;
+        border-radius: 0.5vw;
+        &__icon {
+          box-shadow: 0px 0px 6px #00000020;
+          width: 6vw;
+          height: 6vw;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            width: 3.4vw;
+          }
+        }
+        &__content {
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 80%;
+          h4 {
+            font-size: 1.4vw;
+            color: black;
+            margin: 0;
+            padding: 1vw 0;
+          }
+          a {
+            font-size: 1vw;
+            font-weight: 500;
+            // color: #868686;
+            color: #767676;
+
+            font-family: "Montserrat", sans-serif;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+  &__map {
+    width: 100%;
+    padding-top: 4vw ;
+    iframe {
+      width: 100%;
+      height: 60vh;
+    }
+  }
+  &__touch {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding-top: 4vw ;
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+    }
+    &__left {
+      width: 35%;
+      &__content {
+        h3 {
+          font-family: "Dancing Script", cursive;
+          color: black;
+          font-size: 1.6vw;
+          margin: 0;
+        }
+        h2 {
+          font-family: "Montserrat", sans-serif;
+          color: #f0623a;
+          font-size: 2vw;
+          font-weight: 700;
+          letter-spacing: 1px;
+          margin: 0;
+          padding: 1vw 0;
+        }
+        p {
+          font-size: 1vw;
+          font-weight: 400;
+          // color: #868686;
+          color: #767676;
+
+          font-family: "Roboto", sans-serif;
+          letter-spacing: 1px;
+          line-height: 1.6vw;
+          padding: 2vw 0;
+          margin: 0;
+        }
+      }
+      &__social {
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        padding: 1vw 0 0 0;
+        a {
+          border: 1px solid black;
+          border-radius: 50%;
+          height: 3vw;
+          width: 3vw;
+        }
+        .fa {
+          font-size: 1.5vw;
+          padding: .8vw;
+          color: black;
+         
+        }
+        .face {
+          padding: 0 0.1vw;
+        }
+      }
+    }
+    &__right {
+      width: 55%;
+      box-shadow: 0px 0px 6px 3px #e3dcdc;
+      &__form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 2vw;
+        position: relative;
+      }
+      &__input {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0 0 2vw 0;
+        label {
+          color: black;
+          font-size: 1vw;
+          padding: 0 0 0.5vw 0;
+          // display: none;
+        }
+        input,
+        textarea {
+          border: none;
+          padding: 0.7vw 0 0.7vw 1.4vw;
+          border-radius: 0.35vw;
+          font-size: 1vw;
+          box-shadow: inset 0px 0px 3px 1px #e3dcdc;
+        }
+      }
+      .errors{
+        position: absolute;
+        top: 7vw;
+        margin: 0;
+        color: red;
+        font-size: 1vw;
+      }
+      .errors1{
+        position: absolute;
+        top: 7vw;
+        margin: 0;
+        color: red;
+        font-size: 1vw;
+      }
+      .errors2{
+        position: absolute;
+        top: 14vw;
+        margin: 0;
+        color: red;
+        font-size: 1vw;
+      }
+      .errors3{
+        position: absolute;
+        top: 27vw;
+        margin: 0;
+        color: red;
+        font-size: 1vw;
+      }
+      .wrap {
+        width: 48%;
+      }
+      button {
+        width: 12vw;
+        padding: 0.7vw 0;
+        border: none;
+        background: #f0623a;
+        color: white;
+        font-size: 1.3vw;
+        border-radius: 0.7vw;
+        font-weight: 600;
+        margin: 1vw 0;
+      }
+    }
+  }
+}
+
+//tablet mode
+@media only screen and (min-width: 768px) and (max-width: 1020px) {
+  .contact {
+    &__banner {
+      height: 35vw;
+      h2 {
+        font-size: 4vw;
+      }
+    }
+    &__section {
+      width: 85%;
+      &__top {
+        &__card {
+          &__content {
+            h4 {
+              font-size: 2.2vw;
+            }
+            a {
+              font-size: 1.4vw;
+            }
+          }
+        }
+      }
+    }
+    &__touch {
+      &__left {
+        h3 {
+          font-size: 3.5vw;
+        }
+        h2 {
+          font-size: 2.2vw;
+        }
+        p {
+          font-size: 1.6vw;
+          line-height: 2.2vw;
+        }
+        &__social {
+          width: 60%;
+          a {
+            .fa {
+              font-size: 1.8vw;
+            }
+          }
+        }
+      }
+      &__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &__input {
+          label {
+            font-size: 1.6vw;
+          }
+          input,
+          textarea {
+            font-size: 1.6vw;
+          }
+          .errors{
+     
+            font-size: 1.5vw;
+            top: 9vw;
+          }
+          .errors1{
+     
+            font-size: 1.5vw;
+            top: 9vw;
+          }
+          .errors2{
+     
+            font-size: 1.5vw;
+            top: 17vw;
+          }
+          .errors3{
+     
+            font-size: 1.5vw;
+            top: 36vw;
+          }
+        }
+        button {
+          font-size: 1.6vw;
+        }
+      }
+    }
+  } //END of contact
+} //END of Tablet mode
+
+//mobile mode
+@media only screen and (min-width: 280px) and (max-width: 767px) {
+  .contact {
+    &__banner {
+      height: 31vw;
+      &__heading {
+        top: 17vw;
+        h2 {
+          font-size: 7vw;
+        }
+      }
+    }
+    &__section {
+      &__top {
+        flex-direction: column;
+        &__card {
+          width: 100%;
+          margin: 2vw 0;
+          padding: 5vw 0;
+          &__icon {
+            width: 15vw;
+            height: 15vw;
+
+            img {
+              width: 7.4vw;
+            }
+          }
+          &__content {
+            h4 {
+              font-size: 5vw;
+            }
+            a {
+              font-size: 3.5vw;
+            }
+          }
+        }
+      }
+    }
+    &__touch {
+      margin: 4vw 0;
+      // text-align: center;
+      &__container {
+        flex-direction: column;
+      }
+      &__left {
+        width: 100%;
+        h3 {
+          font-size: 7vw;
+        }
+        h2 {
+          font-size: 5vw;
+        }
+        p {
+          font-size: 4vw;
+          line-height: 5.6vw;
+        }
+        &__social {
+          width: 100%;
+          justify-content: center;
+          padding: 2vw 0;
+          a {
+            margin: 0 2vw;
+
+            .fa {
+              font-size: 4vw;
+              padding: 2vw;
+            }
+            .fa-facebook::before {
+              padding: 0 0.5vw;
+            }
+          }
+        }
+      }
+
+      &__right {
+        width: 100%;
+        // &__form{
+
+        // }
+        &__input {
+          label {
+            font-size: 4vw;
+          }
+          input,
+          textarea {
+            font-size: 3.5vw;
+            margin: 1vw 0;
+          }
+        }
+        .wrap {
+          width: 100%;
+        }
+        .errors{
+     
+          font-size: 3.5vw;
+          top: 14vw;
+        }
+        .errors1{
+          
+          font-size: 3.5vw;
+          top: 33vw;
+        }
+        .errors2{
+         
+          font-size: 3.5vw;
+          top: 48vw;
+        }
+        .errors3{
+         
+          font-size: 3.5vw;
+          top: 87vw;
+        }
+        button {
+          width: 100%;
+
+          font-size: 4vw;
+          margin: 4vw 0;
+        }
+      }
+    }
+  }
+} //END of mobile mode

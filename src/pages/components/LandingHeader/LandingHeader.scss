@@ -1,0 +1,42 @@
+.headerlanding{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0%;
+    z-index: 9999;
+    background-attachment: fixed;
+    &_container{
+        width: 80%;
+        text-align: left;
+        
+        img{
+            width: 17%;
+        }
+    
+
+       
+    }
+}
+@media only screen and (min-width: 280px) and (max-width: 767px) {
+    .headerlanding{
+        &_container{
+            img{
+                width: 48vw;
+                padding: 0;
+            }
+        }
+
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1020px) {
+.headerlanding{
+    &_container{
+        img{
+            width: 40%;
+        }
+    }
+}
+}

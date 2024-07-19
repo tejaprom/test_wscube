@@ -1,0 +1,173 @@
+.mySwiper {
+  //   background-color: red;
+    &_one {
+      color: black;
+      text-align: center;
+      display: flex;
+    }
+  }
+  
+  .swiper-pagination-bullets {
+    display: none;
+  }
+  .swiper-backface-hidden .swiper-slide{
+      display: flex;
+      justify-content: space-around;
+  }
+  
+  .swiper-container {
+    margin-top: 50px;
+    position: relative;
+  }
+  
+  .arrow-left {
+    position: absolute;
+  //   top: 50%;
+    left: 0;
+  }
+  
+  .arrow-right {
+    position: absolute;
+  //   top: 50%;
+    right: 0;
+  }
+  
+  .slick-initialized .slick-slide {
+    // width: 602px !important;
+  }
+  .slider-content {
+    width: 100%;
+  }
+  .swipermb{
+    display: flex;
+  }
+  .gap1 {
+    width: 90% !important;
+    &_back {
+      width: 95% !important;
+      padding: 0.6vw 2vw;
+      // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+      background-color: white;
+      border-radius: 1vw;
+      &_content {
+        background-image: url("../../../assets/LandingVideo/Quotes1.png"),
+        url("../../../assets/LandingVideo/quotes2.png");
+        background-repeat: no-repeat, no-repeat;
+        background-position: left top, right bottom;
+        background-size: 16.5% 8vh, 16.5% 8vh;
+        width: 100%;
+        &_container {
+          padding: 2vw 0vw;
+          width: 96%;
+          h3 {
+            text-align: justify;
+            margin-left: 0.2vw;
+            text-align: left;
+  
+            font-family: "Montserrat", sans-serif;
+  
+            font-size: 1vw;
+            color: #868686;
+            line-height: 2vw;
+          }
+        }
+      }
+    }
+  }
+  
+  .next1 {
+    
+    border-radius: 50%;
+    border: 1px solid #f0623a;
+    
+    font-size: 2.5vw;
+    color: white;
+      background-color: #f0623a;
+    // padding:0 .3vw .3vw .3vw;
+    &:hover {
+      background-color: white;
+      color: #f0623a;
+    }
+  }
+  .arrows1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 97.5%;
+    margin-top: 3vw;
+    &_container {
+      display: flex;
+      justify-content: space-between;
+      width: 10%;
+    }
+  }
+  
+  @media only screen and (min-width: 280px) and (max-width: 767px) {
+    .swipermb{
+      flex-direction: column;
+      gap: 4vw;
+    }
+    .slider-content {
+    }
+    .gap1 {
+      width: 107% !important;
+      &_back {
+        padding: 3.6vw 3vw;
+        margin-top: 3vw;
+        &_content {
+          background-size: 16.5% 4vh, 16.5% 4vh;
+          &_container {
+            padding: 4vw 0;
+            width: 96%;
+            h3 {
+              line-height: 6vw;
+              font-size: 4vw;
+            }
+          }
+        }
+      }
+    }
+    .next1 {
+      font-size: 8.5vw;
+    }
+    .arrows1 {
+      margin-top: 5vw;
+      width: 100%;
+      &_container {
+        width: 39%;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1020px) {
+    .swiper-backface-hidden .swiper-slide{
+      width: 665px;
+    }
+   .gap1{
+    width: 100% !important;
+    &_back{
+      margin-top: 3vw;
+      &_content{
+        background-size: 16.5% 5vh , 16.5% 5vh;
+        &_container{
+          width: 100%;
+          h3{
+            font-size: 2vw;
+        line-height: 3vw;
+        padding: 2vw;
+        word-spacing: 0.5vw
+          }
+        }
+      }
+    }
+   }
+   .arrows1_container{
+    width: 14vw;
+    margin-top: 3vw;
+   }
+   .next1{
+    font-size: 4vw;
+   }
+  }
+
+  

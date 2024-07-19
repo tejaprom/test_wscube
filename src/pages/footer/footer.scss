@@ -1,0 +1,175 @@
+.footer {
+  background: #141716;
+  padding: 4vw 0;
+  display: flex;
+  justify-content: center;
+  &__container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+  &__sections {
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__one {
+    text-align: center;
+    img {
+      width: 48%;
+      cursor: pointer;
+    }
+  }
+  &__two {
+    padding: 2vw 0;
+    width: 72%;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      a li {
+        color: white;
+        font-size: 1vw;
+        cursor: pointer;
+      }
+      a li:hover {
+        font-weight: 600;
+      }
+    }
+  }
+  &__two-mobile {
+    display: none;
+  }
+  &__social {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    a {
+      width: 2vw;
+      height: 2vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid white;
+      border-radius: 50%;
+      color: white;
+      .fa {
+        font-size: 1vw;
+      }
+    }
+  }
+  &__line {
+    width: 100%;
+    border-bottom: 1px solid grey;
+    margin: 4vw 0 2vw 0;
+  }
+  &__copy {
+    p {
+      font-size: 0.9vw;
+    }
+    p {
+      a:hover {
+        color: #1150ad;
+      }
+    }
+  }
+}
+
+//Tablet Mode
+@media only screen and (min-width: 768px) and (max-width: 1020px) {
+  .footer {
+    &__sections {
+      width: 82%;
+    }
+    &__one{
+      img{
+        width: 47%;
+      }
+    }
+    &__two {
+      width: 78%;
+      display: flex;
+      justify-content: center;
+      ul {
+        width: 76%;
+        display: flex;
+        justify-content: space-between;
+        a li {
+          font-size: 2vw;
+        }
+      }
+    }
+    &__social {
+      width: 39%;
+      a {
+        width: 4.5vw;
+        height: 4.5vw;
+        .fa {
+          font-size: 2vw;
+        }
+      }
+    }
+    &__copy {
+      p {
+        font-size: 2.2vw;
+      }
+    }
+  }
+} //End of tablet mode
+
+//Mobile mode
+@media only screen and (min-width: 280px) and (max-width: 767px) {
+  .footer {
+    &__sections {
+      width: 100%;
+    }
+    &__one {
+      img {
+        width: 35vw;
+      }
+    }
+    &__two {
+      display: none;
+    }
+    &__two-mobile {
+      display: block;
+      ul {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 4vw 0;
+        a li {
+          color: white;
+          cursor: pointer;
+          font-size: 3.5vw;
+          margin: 1.5vw 0;
+        }
+        a li:hover {
+          font-weight: 600;
+        }
+      }
+    }
+    &__social {
+      width: 45%;
+      a {
+        width: 8vw;
+        height: 8vw;
+        .fa {
+          font-size: 4.5vw;
+        }
+      }
+    }
+    &__copy {
+      text-align: center;
+      p {
+        font-size: 3vw;
+        a {
+          font-size: 3vw;
+        }
+        a:hover {
+          color: #1150ad;
+        }
+      }
+    }
+  }
+}

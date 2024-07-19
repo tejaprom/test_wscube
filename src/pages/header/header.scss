@@ -1,0 +1,316 @@
+.header {
+  z-index: 100;
+  position: absolute;
+  width: 100%;
+  padding: 1.2vw 0;
+  background-color: transparent;
+  
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  &__section {
+    width: 80%;
+  }
+  &__top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: underline;
+    &__social {
+      width: 15%;
+      &__links {
+        display: flex;
+        justify-content: space-between;
+      }
+      &__link {
+        width: 2.3vw;
+        height: 2.3vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid white;
+        border-radius: 50%;
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 1vw;
+          height: 1vw;
+          .fa {
+            color: white;
+            font-size: 1.3vw;
+          }
+        }
+      }
+    }
+    &__contact {
+      width: 52%;
+      &__details {
+        display: flex;
+        justify-content: space-between;
+        &__mail a {
+          display: flex;
+          color: white;
+          .fa {
+            font-size: 1.2vw;
+            margin: 0.25vw 0.5vw 0 0;
+          }
+          h6 {
+            font-size: 1.3vw;
+            font-weight: 400;
+          }
+          h6:hover {
+            // color:aqua;
+            font-weight: 600;
+          }
+        }
+        // &__mail a:hover {
+        // //   color: #a7b3ef;
+        // }
+        &__phone {
+          width: 50%;
+          display: flex;
+    justify-content: end;
+          .fa {
+            font-size: 1.2vw;
+            margin: 0.25vw 0.5vw 0 0;
+          }
+          a {
+          display: flex;
+          color: white;
+          
+          h6 {
+            font-size: 1.3vw;
+            font-weight: 400;
+            padding: 0 0.5vw 0 0;
+          }
+          h6:hover {
+            font-weight: 600;
+          }
+        }
+        // &__phone a:hover {
+        // //   color: #a7b3ef;
+        // }
+      }
+      }
+    }
+  }
+  &__line {
+    width: 100%;
+    border-bottom: 1px solid #ffffff4b;
+    margin: 1vw 0;
+  }
+  &__bottom {
+    &__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1vw 0 0 0;
+    }
+    &__logo {
+      width: 17%;
+      img {
+        width: 100%;
+        cursor: pointer;
+      }
+    }
+    &__menus {
+      width: 54%;
+      ul {
+        display: flex;
+        justify-content: space-between;
+        a {
+          color: white;
+        
+          cursor: pointer;
+          position: relative;
+          li {
+            color: white;
+            font-size: 1vw;
+            font-weight: 600;
+            line-height: .5vw;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 0.15em;
+            
+            display: inline-block;
+            padding: 10px 15px;
+            position: relative;
+          }
+          li:after {
+            background: none repeat scroll 0 0 transparent;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            background: #fff;
+            transition: width 0.2s ease 0s, left 0.2s ease 0s;
+            width: 0;
+          }
+          li:hover:after { 
+            width: 63%; 
+            left: 17%; 
+          }
+        }
+       
+      }
+    }
+  }
+  &__mobile {
+    display: none;
+  }
+}
+
+//Tablet mode
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .header {
+    &__top {
+      &__social {
+        width: 20%;
+
+        &__link {
+          width: 3vw;
+          height: 3vw;
+          a {
+            .fa {
+              font-size: 1.6vw;
+            }
+          }
+        }
+      }
+      &__contact {
+        width: 63%;
+
+        &__details {
+          &__mail a {
+            .fa {
+              font-size: 1.6vw;
+            }
+            h6 {
+              font-size: 1.6vw;
+            }
+          }
+          &__phone 
+            .fa {
+              font-size: 1.6vw;
+            }
+           a{ 
+            h6 {
+              font-size: 1.6vw;
+            }
+          }
+          
+        }
+      }
+    }
+    &__bottom {
+      &__logo {
+        width: 20%;
+      }
+      &__menus {
+        width: 67%;
+        ul {
+          a {
+            width: 10vw;
+            text-align: center;
+            li {
+              font-size: 1.2vw;
+              width: 13vw;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//Mobile mode
+@media only screen and (min-width: 280px) and (max-width: 767px) {
+  .header {
+    &__container {
+      display: none;
+    }
+
+    &__mobile {
+      display: flex;
+      justify-content: center;
+      &__section {
+        margin: 2vw 0;
+        width: 80%;
+      }
+      &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      &__logo {
+        img {
+          width: 40vw;
+        }
+      }
+      &__line {
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2941176471);
+        margin: 2vw 0;
+      }
+      // &__mobile__logo{
+
+      // }
+      &__menu {
+        position: relative;
+
+        &__icon {
+          background-color: #424242;
+          border-radius: 50%;
+          height: 8vw;
+          width: 8vw;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          i {
+            color: white;
+            font-size: 6vw;
+          }
+          i:hover {
+            color: yellow;
+            // background-color: yellow;
+          }
+        }
+        &__expand {
+          position: absolute;
+          text-align: center;
+          background-color: #000000;
+          border: none;
+          width: 75vw;
+          /* height: auto; */
+          opacity: 0.9;
+          padding: 3vw 0;
+          top: 8vw;
+          right: 1vw;
+          ul {
+            li {
+              font-size: 4vw;
+            }
+            li:hover {
+              // color: #ff5858;
+              color: #ffc107;
+            }
+            hr {
+              width: 35%;
+              height: 0.1vw;
+              background: #ffc107;
+              opacity: 0.5;
+              border: none;
+              margin: 1vw 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

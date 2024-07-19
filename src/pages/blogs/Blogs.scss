@@ -1,0 +1,326 @@
+.blog {
+  &_container {
+    &_banner {
+      background-image: url("../../assets/images/blogs/contact.png");
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center top;
+      height: 75vh;
+      color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h2 {
+        font-size: 2.2vw;
+        text-align: center;
+        letter-spacing: 1px;
+        font-weight: 600;
+        margin: 0;
+        color: white;
+      }
+    }
+    &_content {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      color: black;
+      &_section {
+        width: 80%;
+        padding-top: 5vw;
+        &_heading {
+          h3 {
+            color: #000;
+            font-family: Dancing Script, cursive;
+            font-size: 2.2vw;
+            letter-spacing: 1px;
+            margin: 0;
+          }
+          h2 {
+            color: #f0623a;
+            font-family: Montserrat, sans-serif;
+            font-size: 2.2vw;
+            font-weight: 700;
+            margin: 0;
+            padding: 1vw 0;
+          }
+        }
+        &_blogs1 {
+          padding-top: 1.5vw;
+          display: flex;
+width: 89%;
+          justify-content: space-between;
+          // align-items: center;
+          &_row1 {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &_description {
+              border: none;
+              border-radius: 1.8vw;
+              width: 42%;
+              box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.1),
+                0 1px 0px 0 rgba(0, 0, 0, 0.1);
+              margin-bottom: 5vw;
+              &:hover {
+              }
+              &_image {
+                width:82% ;
+                img {
+                  width: 23.56vw;
+    border-radius: 1vw 1vw 0 0;
+                }
+              }
+              &_details {
+                border-radius: 1vw;
+                background-color: white;
+                padding: 1vw;
+
+                h2 {
+                  font-family: Montserrat, sans-serif;
+                  font-size: 1.6vw;
+                  font-weight: 700;
+                  margin: 0;
+                  padding: 1vw 0;
+                  color: #000;
+                }
+                span {
+                 
+                  font-size: 1.03vw;
+                  color: black;
+                  cursor: pointer;
+                  background: linear-gradient(to right, hsl(0, 0%, 30%) 0, hsl(0, 0%, 100%) 10%,   hsl(0, 66%, 53%) 20%);
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                  animation: shine 15s infinite linear;
+                 
+                 
+                }
+                //  span:hover {
+                //     color: #f0623a !important;
+                //     font-size: 1.05vw;
+                //   }
+                @keyframes shine {
+                  0% {
+                    background-position: 0;
+                  }
+                  60% {
+                    background-position: 600px;
+                  }
+                  100% {
+                    background-position: 600px;
+                  }
+                }
+                p {
+                  color: #868686;
+                  font-family: Roboto, sans-serif;
+                  font-size: 0.97vw;
+                  letter-spacing: 0.65px;
+                  line-height: 1.4vw;
+                  padding: 0.7vw 0;
+                  text-align: left;
+                  word-spacing: 0.1vw;
+                  margin: 0;
+                }
+                &_profile {
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  width: 95%;
+                  img {
+                  }
+                  h3 {
+                    font-family: Montserrat, sans-serif;
+                    font-size: 1.3vw;
+                    font-weight: 700;
+                    margin: 0;
+                    padding: 1vw 0;
+                    color: #000;
+                  }
+                  p {
+                    color: #868686;
+                    font-family: Roboto, sans-serif;
+                    font-size: 1.05vw;
+                    letter-spacing: 0.8px;
+                    line-height: 1.6vw;
+                    padding: 0.7vw 0;
+                    text-align: left;
+                    word-spacing: 0.1vw;
+                    margin: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//tablet mode
+
+// @media only screen and (min-width: 768px) and (max-width: 1024px) {
+// .blog{
+//     &_container{
+//         &_banner{
+//             height: 35vw;
+//             h2{
+//                 font-size: 4vw;
+//             }
+//         }
+//     }
+// }
+// }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .blog {
+    &_container {
+      &_banner {
+        h2 {
+          font-size: 4.2vw;
+        }
+      }
+      &_content {
+        &_section {
+          width: 80%;
+          &_heading {
+            h3 {
+              font-size: 3.2vw;
+            }
+            h2 {
+              font-size: 2.5vw;
+            }
+          }
+          &_blogs1 {
+            display: flex;
+            // justify-content: space-between;
+            align-items: center;
+            width: 100%;
+
+            &_row1 {
+              width: 77%;
+              &_description {
+                width: 44%;
+                &_image {
+                  img {
+                    width: 27vw;
+                  }
+                }
+                &_details {
+                  h2 {
+                    font-size: 1.64vw;
+                  }
+                  span {
+                    font-size: 1.14vw;
+                    &:hover {
+                      color: #f0623a !important;
+                      font-size: 1.07vw;
+                    }
+                  }
+                  p {
+                    font-size: 1.05vw;
+                  }
+                  &_profile {
+                    width: 100%;
+                    img {
+                      width: 20%;
+                    }
+                    h3 {
+                      font-size: 1.4vw;
+                    }
+                    p {
+                      font-size: 1.18vw;
+                      letter-spacing: 0.4px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 280px) and (max-width: 767px) {
+  .blog {
+    &_container {
+      &_banner {
+        height: 45vh;
+        h2 {
+          font-size: 9vw;
+        }
+      }
+      &_content {
+        &_section {
+          padding-top: 8vw;
+          &_heading {
+            h3 {
+              font-size: 6.2vw;
+            }
+            h2 {
+              font-size: 5.2vw;
+            }
+          }
+          &_blogs1 {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+             &_row1 {
+               flex-direction: column;
+               display: flex;
+               width: 100%;
+              &_description {
+                width: 100%;
+                margin-bottom: 15vw;
+            
+                &_image {
+                  
+                  img {
+                    width: 80vw;
+                  }
+                }
+                &_details {
+                    width: 100%;
+                    padding: 3vw;
+                  h2 {
+                    font-size: 4vw;
+                  }
+                  span {
+                    font-size: 3vw;
+                    line-height: 5.4vw;
+                    &:hover {
+                      color: #f0623a !important;
+                      font-size: 1.07vw;
+                    }
+                  }
+                  p {
+                    font-size: 3.2vw;
+                    line-height: 5vw;
+                  }
+                  &_profile {
+                    width: 100%;
+                    img {
+                      width: 20%;
+                    }
+                    h3 {
+                      font-size: 4vw;
+                    }
+                    p {
+                      font-size: 4.18vw;
+                      letter-spacing: 0.4px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

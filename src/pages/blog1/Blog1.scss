@@ -1,0 +1,154 @@
+.blog1 {
+  &_container {
+    &_banner {
+      background-image: url("../../assets/images/blogs/contact.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center top;
+      height: 75vh;
+      color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+        font-size: 2vw;
+        text-align: center;
+        letter-spacing: 1px;
+        font-weight: 600;
+        margin: 0;
+        color: white;
+      }
+    }
+    &_content {
+      background-color:white;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &_section {
+        width: 65%;
+        padding: 2vw  0 5vw 0;
+        &_title{
+          padding: 3vw 0;
+          color:  #f0623a;
+          text-align: center;
+        }
+        &_card {
+          // border-radius: 1vw;
+          
+          box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.1), 0 1px 0px 0 rgba(0, 0, 0, 0.1);
+        
+          padding: 2vw;
+          &_image {
+            img {
+              width: 100%;
+            }
+            &_title {
+              display: flex;
+              padding: 1vw 0;
+              justify-content: space-between;
+
+              width: 40%;
+              p {
+                color: black;
+                font-family: "Montserrat", sans-serif;
+                font-weight: 600;
+                font-size: 1.1vw;
+                margin: 0;
+              }
+              .line {
+                border-right: 1px solid black;
+                height: 24px;
+              }
+            }
+          }
+          &_description {
+            h2 {
+              color: black;
+              font-family: "Montserrat", sans-serif;
+              font-size: 2.1vw;
+              font-weight: 600;
+              margin: 0;
+              padding: 0.5vw 0 1.5vw 0;
+            }
+            p {
+              color: black;
+              text-align: left;
+              font-family: "Roboto", sans-serif;
+
+              font-size: 1.05vw;
+              word-spacing: 0.1vw;
+              letter-spacing: 0.8px;
+              line-height: 2vw;
+              padding: 0.7vw 0;
+                         }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+//tablet
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .blog1{
+    &_container{
+      &_banner{
+        
+        h2{
+          font-size: 4vw;
+        }
+      }
+    }
+
+  }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 767px) {
+  .blog1{
+    &_container{
+      &_banner{
+        h2{
+          font-size: 7.2vw;
+        }
+      }
+      &_content{
+        &_section{
+          width: 85%;
+          &_title{
+             
+          }
+          &_card{
+            &_image{
+              &_title{
+                width: 75%;
+                p{
+                  font-size: 3.5vw;
+                }
+                .line{
+                  height: 13px;
+                }
+              }
+            }
+            &_description{
+              h2{
+                font-size: 5.1vw;
+              }
+              p{
+                font-family: 'FontAwesome';
+                font-size: 4vw;
+                // line-height: 0;
+                word-spacing: 1.1vw;
+                line-height: 5vw;
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
+

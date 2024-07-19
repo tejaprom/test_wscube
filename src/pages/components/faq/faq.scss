@@ -1,0 +1,193 @@
+.faq-title {
+    justify-content: center !important;
+    border-bottom: none !important;
+    h2 {
+        font-size: 2.6vw !important;
+        color: #525252 !important;
+    }
+}
+.rmd-expansion-panel__header {
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: #525252;
+    padding: 1vw 1vw 1vw 1.2vw;
+    font-family: "Poppins", sans-serif !important;
+    align-items: flex-start !important;
+    text-align: justify !important;
+    line-height: 1.8vw;
+}
+.row-title {
+    padding: 1.2vw 0 1.6vw 0 !important;
+}
+.rmd-card {
+    font-family: "Poppins", sans-serif !important;
+    span {
+        font-size: 1.1vw;
+        font-weight: 400;
+    }
+    h5 {
+        margin: 0;
+        font-size: 1vw;
+        font-weight: 400;
+        padding: 0 0 1.6vw 0;
+        word-spacing: 1px;
+        text-align: justify !important;
+    }
+    h6 {
+        margin: 0;
+        font-size: 1.1vw;
+        font-weight: 400;
+        padding: 0 0 1vw 0;
+        word-spacing: 1px;
+    }
+}
+.rmd-card:hover .rmd-expansion-panel__header {
+    background-color: #9894944a;
+    color: #000000;
+}
+
+.help {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3vw 0;
+    h1 {
+        font-size: 3vw;
+        margin: 0;
+        padding-bottom: 2vw;
+        color: #161616;
+    }
+    &__container {
+        width: 85%;
+        background-color: #f7f7f7;
+        padding: 2vw 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__sections {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 280px) and (max-width: 319px) {
+    .rmd-card {
+        span {
+            font-size: 4vw;
+        }
+        h5 {
+            font-size: 3.6vw;
+            text-align: start !important;
+        }
+        h6 {
+            font-size: 3.3vw;
+            text-align: start !important;
+        }
+    }
+    .help {
+        display: none;
+        padding: 6vw 0;
+        h1 {
+            font-size: 6vw;
+            padding-bottom: 3vw;
+        }
+        &__container {
+            width: 90%;
+        }
+    }
+    .rmd-expansion-panel__header {
+        font-size: 4vw;
+        line-height: 20px;
+        text-align: start !important;
+        word-spacing: 2px;
+        padding-left: 3vw !important;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 760px) {
+    .rmd-card {
+        span {
+            font-size: 4vw;
+        }
+        h5 {
+            font-size: 3.6vw;
+            text-align: start !important;
+        }
+        h6 {
+            font-size: 3.3vw;
+            text-align: start !important;
+        }
+    }
+    .help {
+        display: none;
+        padding: 6vw 0;
+        h1 {
+            font-size: 6vw;
+            padding-bottom: 3vw;
+        }
+        &__container {
+            width: 90%;
+        }
+    }
+    .rmd-expansion-panel__header {
+        font-size: 4vw;
+        line-height: 20px;
+        text-align: start !important;
+        word-spacing: 2px;
+        padding-left: 3vw !important;
+    }
+}
+
+@media screen and (min-width: 761px) and (max-width: 1020px) {
+    .rmd-card {
+        span {
+            font-size: 2.3vw;
+        }
+        h5 {
+            font-size: 2vw;
+        }
+        h6 {
+            font-size: 1.8vw;
+        }
+    }
+    .faq-title {
+        h2 {
+            font-size: 4vw !important;
+        }
+    }
+    .rmd-expansion-panel__header {
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (min-width: 1021px) and (max-width: 1399px) {
+    .help {
+        &__sections {
+            width: 90%;
+        }
+    }
+    .rmd-card {
+        span {
+            font-size: 1.3vw;
+        }
+        h5 {
+            font-size: 1.2vw;
+            padding: 0 0 1vw 0;
+        }
+        h6 {
+            font-size: 1.1vw;
+            padding: 0 0 1vw 0;
+        }
+    }
+    .faq-title {
+        h2 {
+            font-size: 3vw !important;
+        }
+    }
+    .rmd-expansion-panel__header {
+        font-size: 1.5vw;
+        padding: 1vw!important;
+    }
+}
